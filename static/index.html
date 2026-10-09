@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What If? — Explore alternate realities</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><a class="logo" href="/" aria-label="What If? home"><span class="orb"></span>What If?</a></header>
+<main>
+<section id="landing">
+  <h1>What <span class="grad">If?</span></h1>
+  <p class="tag">Explore alternate realities.</p>
+  <p class="lede">Type a hypothetical. Get a three-stage timeline of plausible consequences, then change a decision and watch the path branch.</p>
+  <div class="inputwrap">
+    <label for="scenario" class="sr">Your scenario</label>
+    <textarea id="scenario" rows="3" maxlength="500" placeholder="What if the internet disappeared for a year?"></textarea>
+    <button id="go" class="btn primary">Simulate Reality</button>
+  </div>
+  <div id="examples" class="examples" role="list"></div>
+  <ol class="how">
+    <li><b>1. Imagine</b> Describe any hypothetical.</li>
+    <li><b>2. Explore</b> See day-one, one-year and ten-year outcomes.</li>
+    <li><b>3. Branch</b> Pick a decision and compare paths.</li>
+  </ol>
+</section>
+<section id="loading" hidden aria-live="polite"><div class="spinner"></div><p id="loadmsg">Analysing the scenario…</p></section>
+<section id="error" hidden role="alert"><h2>Something went wrong</h2><p id="errmsg"></p>
+  <div class="row"><button id="retry" class="btn primary">Retry</button><button id="demo" class="btn">Load demo scenario</button><button class="btn newsim">New Simulation</button></div></section>
+<section id="results" hidden></section>
+</main>
+<footer>AI-generated hypothetical scenarios based on stated assumptions. Not predictions or advice.</footer>
+<script src="app.js"></script>
+</body>
+</html>

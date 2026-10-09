@@ -1,0 +1,47 @@
+{
+ "scenario": "What if everyone in the UK received £1 million tomorrow?",
+ "demo_branch_id": "C",
+ "simulation": {
+  "scenario_title": "Everyone in the UK Gets £1 Million",
+  "summary": "Every UK resident receives £1 million overnight. Money supply jumps enormously while goods, housing and labour stay the same, so what money can buy becomes the central question.",
+  "assumptions": ["The payment is real, one-off and universally known.", "Production capacity does not change overnight.", "Banks and markets keep operating, at least initially.", "No coordinated international response at first."],
+  "timeline": [
+   {"period": "Day 1", "headline": "Shock and scramble", "icon": "⚡", "summary": "Banking systems strain and shops, estate agents and markets react within hours.",
+    "consequences": ["Payment systems and banking apps struggle under demand.", "Sellers raise prices or pull stock.", "Many people stop turning up to work.", "Sterling falls sharply as markets react."],
+    "winners": ["Asset owners", "Early spenders"], "losers": ["Savers in cash", "Essential workers"], "uncertainty_level": "Low"},
+   {"period": "Year 1", "headline": "Inflation and labour shortages", "icon": "📈", "summary": "Demand far outstrips supply, so prices surge, especially for housing and scarce services.",
+    "consequences": ["Severe inflation as spending chases limited goods.", "Shortages of care, trades, hospitality and transport workers.", "Imports surge, putting pressure on the currency.", "Government faces pressure for price controls and rationing."],
+    "winners": ["Importers", "Owners of scarce assets"], "losers": ["Anyone relying on fixed incomes", "Public services"], "uncertainty_level": "Medium"},
+   {"period": "Year 10", "headline": "A reshaped economy", "icon": "🌍", "summary": "The one-off gain is largely absorbed, but the economy and social structure may look very different.",
+    "consequences": ["Real value of £1m is much lower than at first.", "Wage structures and automation investment shift.", "Wealth gaps may re-emerge in new forms.", "Migration and trade patterns change."],
+    "winners": ["Automation and import-heavy sectors", "Young entrepreneurs"], "losers": ["Anyone who held cash", "Low-paid essential sectors"], "uncertainty_level": "High"}
+  ],
+  "key_effects": ["Prices rise rapidly as demand outstrips supply.", "Labour shortages in essential sectors.", "Pressure on sterling and trade balances."],
+  "second_order_effects": ["Sudden demand for care and trades at very high pay.", "Rapid investment in automation to replace scarce workers."],
+  "risks": ["Hyperinflation-style price spirals.", "Breakdown of essential services.", "Social unrest over scarcity."],
+  "benefits": ["Large short-term freedom to retrain or start businesses.", "Debt and housing stress relieved for many."],
+  "decisions": [
+   {"id": "A", "title": "Spend it immediately", "description": "Most people spend the bulk of the money within weeks."},
+   {"id": "B", "title": "Invest it", "description": "Most people put the money into property, shares and businesses."},
+   {"id": "C", "title": "Release it gradually", "description": "Government restricts access and distributes the money over years."}
+  ]
+ },
+ "branch": {
+  "decision_explanation": "The government locks the funds and pays them out in small monthly instalments over a decade.",
+  "how_it_differs": "Demand rises steadily instead of exploding, so inflation is far milder and supply can adjust, though public trust and enforcement become the main strain.",
+  "timeline": [
+   {"period": "Day 1", "headline": "Relief and frustration", "icon": "🔒", "summary": "People are told the money exists but cannot spend it all at once.",
+    "consequences": ["Large queues and political protests demanding access.", "Black markets for early access appear.", "Markets calm compared with the unrestricted case."],
+    "winners": ["Retailers", "Financial regulators"], "losers": ["Anyone wanting a lump sum"], "uncertainty_level": "Low"},
+   {"period": "Year 1", "headline": "Managed boom", "icon": "📊", "summary": "Steady extra spending lifts the economy with moderate inflation.",
+    "consequences": ["Prices rise but far more slowly.", "Fewer workers quit, easing shortages.", "Housing demand grows but lending is controlled."],
+    "winners": ["Households", "Local businesses"], "losers": ["Renters facing higher rents"], "uncertainty_level": "Medium"},
+   {"period": "Year 10", "headline": "Gradual transformation", "icon": "🌱", "summary": "The economy adjusts to higher incomes, with productivity and investment gradually growing.",
+    "consequences": ["Higher living standards, spread over time.", "Trust in government is tested by enforcement.", "Inequality persists but is narrower."],
+    "winners": ["Long-term savers", "Education and training sectors"], "losers": ["Anyone excluded by rules or loopholes"], "uncertainty_level": "High"}
+  ],
+  "key_effects": ["Inflation stays moderate.", "Labour supply stays mostly intact.", "Government power over money grows."],
+  "risks": ["Corruption and loopholes.", "Political backlash over restrictions."],
+  "benefits": ["Economic stability.", "Time for markets and supply to adapt."]
+ }
+}
